@@ -16,6 +16,6 @@ def create_app():
         # prediction
         # return json
 
-        return jsonify({'result': 'I hate JAVA'})
+        return jsonify({'result': 'I love dimigo'})
 
     return app
