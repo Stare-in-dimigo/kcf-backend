@@ -16,6 +16,6 @@ def create_app():
         # prediction
         # return json
 
-        return jsonify({'result': 'I love dimigo'})
+        return jsonify({'result': 'Welcome to KCF Hackathon'})
 
     return app
