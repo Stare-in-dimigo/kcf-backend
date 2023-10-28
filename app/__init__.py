@@ -9,13 +9,12 @@ def create_app():
     def home():
         return render_template("index.html")
 
-    @app.route("/predict", methods=["GET"])
-    def predict():
-        # 1 laod image
-        # 2 image -> tensor
-        # prediction
-        # return json
+    @app.route("/getuser", methods=["GET"])
+    def getUser():
+        return jsonify({'result': 'User Data'})
 
-        return jsonify({'result': 'Welcome to KCF Hackathon'})
+    @app.route("/getclub", methods=["GET"])
+    def getClub():
+        return jsonify({'result': 'Club Data'})
 
     return app
